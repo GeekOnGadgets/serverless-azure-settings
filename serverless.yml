@@ -1,4 +1,4 @@
-service: centrality-settings
+service: settings
 
 provider:
   name: azure
