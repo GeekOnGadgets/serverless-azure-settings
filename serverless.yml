@@ -5,7 +5,6 @@ provider:
   location: Australia Southeast
 
 plugins:
-  # - serverless-build-plugin
   - serverless-azure-functions
   - serverless-webpack
 
