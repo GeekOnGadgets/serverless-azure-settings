@@ -1,0 +1,23 @@
+{
+  "name": "settings",
+  "version": "0.0.1",
+  "description": "settings",
+  "main": "handler.js",
+  "keywords": [
+    "azure",
+    "serverless"
+  ],
+  "dependencies": {
+    "babel": "6.23.0",
+    "babel-core": "6.23.1",
+    "babel-preset-es2015": "6.24.1"
+  },
+  "devDependencies": {
+    "babel-loader": "6.4.1",
+    "serverless-azure-functions": "*",
+    "serverless-build-plugin": "1.2.0",
+    "serverless-offline": "3.10.2",
+    "serverless-webpack": "1.0.0-rc.4",
+    "webpack-node-externals": "^1.5.4"
+  }
+}

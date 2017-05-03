@@ -1,0 +1,31 @@
+service: centrality-settings
+
+provider:
+  name: azure
+  location: Australia Southeast
+
+plugins:
+  # - serverless-build-plugin
+  - serverless-azure-functions
+  - serverless-webpack
+
+package:
+  include: 
+    - src/
+  exclude:
+    - tests/**
+
+functions:
+  settings:
+    handler: handler.settings
+    events:
+      - http: true
+        x-azure-settings:
+          authLevel: anonymous
+
+custom:
+  webpackIncludeModules:
+    packagePath: './package.json'
+  serverless-offline:
+    babelOptions:
+      presets: ["es2015"]
