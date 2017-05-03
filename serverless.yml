@@ -11,8 +11,6 @@ plugins:
 package:
   include: 
     - src/
-  exclude:
-    - tests/**
 
 functions:
   settings:
